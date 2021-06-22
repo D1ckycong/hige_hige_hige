@@ -1,0 +1,316 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/earyaccess/notosansjapanese.css);
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.container{
+  max-width: 1080px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+/* ヘッダー */
+header{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+header > .container {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  max-width: none;
+  padding: 0 20px;
+}
+
+/* ロゴ */
+.area_logo_header .logo {
+  /* display: flex;
+  align-items: center; */
+  display: block;
+}
+.area_logo_header img{
+  height: 40px;
+  vertical-align: bottom;
+}
+
+/* ヘッダーナビ */
+.nav_header {
+  margin: 0 0 0 auto;
+}
+.list_nav_header {
+  display: flex;
+  align-items: center;
+  margin: 0 -25px;
+}
+.list_nav_header > li {
+  padding: 0 25px;
+}
+.list_nav_header a {
+  color: #000;
+  font: 1000 18px/1em 'futura PT', 'noto sans japanese',sans-serif;
+}
+.btn_contact {
+  color: #fff;
+  font: 400 18px/1em 'futura PT', 'noto sans japanese',sans-serif;
+  display: flex;
+  align-items: center;
+  height: 36px;
+  padding: 0 60px 0 60px;
+  background: #fff;
+  border: 1px solid;
+  border-radius: 10px;
+  box-shadow: 0px 7px 6px -4px rgba(16,61,72,.2);
+  position: relative;
+}
+.btn_contact:hover {
+  background: #EBBA87;
+}
+
+/* トップビュー */
+.area_top_view {
+  background: url(../images/tp-vw/topCover.png) no-repeat bottom center;
+  background-size: cover;
+  margin-top: 60px;
+}
+.area_top_view .container {
+  height: 750px;
+}
+
+/* エリア＿インデックス */
+[class*="area_index"] {
+  padding: 60px 0 60px;
+}
+
+/* ヘッド */
+.head_index {
+  margin: 0 0 100px;
+  display: flex;
+  justify-content: center;
+}
+.head_index .ttl {
+  font: 500 55px/1em 'futura PT','noto sans japanese',sans-serif;
+  padding: 0 0 10px;
+  position: relative;
+}
+.head_index .ttl:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 8px;
+  background: #F4B77E;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* サービス */
+.list_service {
+  display: flex;
+  frex-wrap: wrap;
+  margin: 0 -80px;
+}
+.list_service > li {
+  width: 33.3333%;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.list_service .service_icon {
+  margin: 0 0 40px;
+  position: relative;
+  z-index: 1;
+}
+.list_service .service_icon:before {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0px 3px 6px rgba(0 ,0 , 0, 0.4);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  transform: translate(-50% , -50%);
+}
+.list_service img {
+  width: 150px;
+  height: 150px;
+  vertical-align: bottom;
+}
+.list_service .ttl {
+  font: 500 30px/1em 'futura PT','noto sans japanese',sans-serif;
+  margin: 0 0 40px;
+}
+.design_coding {
+  width: 350px;
+  text-align: center;
+}
+
+/* プロフィール */
+.layout_2_div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 -40px;
+}
+.layout_2_div > div {
+  width: 50%;
+  padding: 0 40px;
+}
+.text_index .name {
+  font: bold 31px/1em 'futura PT','noto sans japanese',sans-serif;
+  margin: 0 0 60px;
+}
+.text_index .description {
+  font: 300 28px/1em 'futura PT','noto sans japanese',sans-serif;
+}
+
+.area_index_profile img {
+  max-width: 100%;
+  border: 1px solid #707070;
+  border-radius: 100%;
+}
+
+/* 連絡先 */
+.area_index_contact  .body_index{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.area_index_contact .description {
+  font: 1 25px/1.4em 'futura PT','noto sans japanese',sans-serif;
+  text-align: center;
+  margin: 0 0 40px;
+}
+.area_index_contact .sns_description {
+  font: 1 20px/1.4em 'futura PT','noto sans japanese',sans-serif;
+  margin: 0 0 20px;
+}
+.area_index_contact hr {
+  width: 100%;
+  margin: 0 0 35px;
+}
+.form_description {
+  font: 1 20px/1em 'futura PT','noto sans japanese',sans-serif;
+  text-align: center;
+  margin: 0 0 30px;
+}
+/* SNSリスト */
+.list_sns {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 -26px 20px;
+}
+.list_sns > li {
+  padding: 0 26px;
+}
+.list_sns a {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0px 16px 6px -8px rgba(16,61,72,.2);
+}
+.list_sns a:before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+.list_sns .line a:before {
+  background: url(../images/icon/icon_sns_line.svg);
+}
+.list_sns .twitter a:before {
+  background: url(../images/icon/icon_sns_twitter.svg);
+}
+.list_sns .tumbler a:before {
+  background: url(../images/icon/icon_sns_tumbler.svg);
+}
+.list_sns .mail a:before {
+  background: url(../images/icon/icon_sns_mail.svg);
+}
+/* フォーム */
+.contact_form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+.contact_input {
+  color:black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #707070;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+.contact-input:focus {
+   border:2px solid #707070;
+ }
+ textarea {
+   height: 200px;
+   line-height: 150%;
+   resize:vertical;
+ }
+ [type="submit"] {
+   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+   width: 100%;
+   text-align: center;
+   background:#F4B77E;
+   border-radius:5px;
+   border:0;
+   cursor:pointer;
+   color:white;
+   font-size:24px;
+   padding-top:10px;
+   padding-bottom:10px;
+   transition: all 0.3s;
+   margin-top:-4px;
+   font-weight:700;
+ }
+ [type="submit"]:hover { background:#FF9C40; }
+
+.end-message {
+  display: none;
+}
+.false-message {
+  display: none;
+}
+
+/* フッター */
+footer > .container {
+  padding: 0 0 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.copyright {
+  font: 300 20px/1em 'futura PT','noto sans japanese',sans-serif;
+  margin: 40px 0 0;
+}
