@@ -21,10 +21,10 @@
         </div>
         <nav class="nav_header">
           <ul class="list_nav_header">
-            <li><a href="">サービス</a></li>
-            <li><a href="">自己紹介</a></li>
-            <li><a href="">製作物一覧</a></li>
-            <li><a href="" class="btn_contact">連絡先</a></li>
+            <li><a href="#service">サービス</a></li>
+            <li><a href="#profile">自己紹介</a></li>
+            <li><a href="#product">製作物一覧</a></li>
+            <li><a href="#contact" class="btn_contact">連絡先</a></li>
           </ul>
         </nav>
       </div>
@@ -40,7 +40,7 @@
           </ul>
       </div>
       <!-- サービス -->
-      <section class="area_index_service">
+      <section id="service" class="area_index_service">
         <div class="container">
           <div class="head_index">
             <h2 class="ttl">サービス</h2>
@@ -79,7 +79,7 @@
         </div>
       </section>
       <!-- 自己紹介 -->
-      <section class="area_index_profile">
+      <section id="profile" class="area_index_profile">
         <div class="container">
           <div class="head_index">
             <h2 class="ttl">自己紹介</h2>
@@ -107,7 +107,7 @@
         </div>
       </section>
       <!-- 製作物一覧 -->
-      <section class="area_index_product">
+      <section id="product" class="area_index_product">
         <div class="container">
           <div class="head_index">
             <h2 class="ttl">製作物</h2>
@@ -136,7 +136,7 @@
         </div>
       </section>
       <!-- 連絡先 -->
-      <section class="area_index_contact">
+      <section id="contact" class="area_index_contact">
         <div class="container">
           <div class="head_index">
             <h2 class="ttl">連絡先</h2>
@@ -150,10 +150,10 @@
               各SNS・メールはこちらから
             </div>
             <ul class="list_sns">
-              <li class="line"><a href=""></a></li>
-              <li class="twitter"><a href=""></a></li>
-              <li class="tumbler"><a href=""></a></li>
-              <li class="mail"><a href=""></a></li>
+              <li class="line"><a href="https://lin.ee/CfR7RkD" target="_blank" rel="noopener noreferrer"></a></li>
+              <li class="twitter"><a href="https://twitter.com/hige63179269" target="_blank" rel="noopener noreferrer"></a></li>
+              <li class="tumbler"><a href="https://higed1cky.tumblr.com/ask" target="_blank" rel="noopener noreferrer"></a></li>
+              <li class="mail"><a href="mailto:yuharad@gmail.com?subject=問い合わせ&amp;body=ご記入ください"></a></li>
             </ul>
             <hr>
             <div class="contact_form">
@@ -162,10 +162,10 @@
                 <p>（ご送信いただいてから3～4営業日以内に返信させていただきます。）</p>
               </div>
               <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdTeQm1-6vEbR5TquVlWLODlSiGYOR0GQ9t1x5wAGDHzEPGHg/formResponse" method="post" id="form">
-                <input class="contact_input" id="name" name="entry.834712315" type="text" placeholder="お名前">
+                <input class="contact_input" id="name" name="entry.834712315" type="text" placeholder="お名前" required>
                 <input class="contact_input" id="phonenumber" name="entry.1256005106" type="tel" placeholder="お電話番号">
-                <input class="contact_input" id="email" name="entry.1422642142" type="email" placeholder="メールアドレス">
-                <textarea class="contact_input" id="msg" name="entry.784989133" placeholder="お問い合わせ内容"></textarea>
+                <input class="contact_input" id="email" name="entry.1422642142" type="email" placeholder="メールアドレス" required>
+                <textarea class="contact_input" id="msg" name="entry.784989133" placeholder="お問い合わせ内容" required></textarea>
                 <button class="submit-btn" type="submit" name="button" value="送信">送信</button>
               </form>
               <p class="end-message">お問い合わせありがとうございました</p>
