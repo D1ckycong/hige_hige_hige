@@ -1,0 +1,38 @@
+.full-slider {
+  position: relative;
+  /* top: -750px; */
+  z-index: -100;
+}
+
+
+.full-slider-item01 {
+  background: url(../images/tp-vw/tp-vw-bg01.jpg);
+}
+
+.full-slider-item02 {
+  background: url(../images/tp-vw/tp-vw-bg02.jpg);
+}
+
+.full-slider-item03 {
+  background: url(../images/tp-vw/tp-vw-bg03.jpg);
+}
+.full-slider-item01_rp {
+  background: url(../images/tp-vw/tp-vw-bg01-rp.jpg);
+}
+
+.full-slider-item02_rp {
+  background: url(../images/tp-vw/tp-vw-bg02-rp.jpg);
+}
+
+.full-slider-item03_rp {
+  background: url(../images/tp-vw/tp-vw-bg03-rp.jpg);
+}
+
+.full-slider-item {
+  width: 100%;
+  height: 100vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
